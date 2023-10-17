@@ -1,0 +1,73 @@
+{
+    "users": {
+        "user_id": "UniqueUserID",
+        "username": "Arkady", // Assuming Arkady is the user's name
+        "joined_date": "YYYY-MM-DD",
+        "gender": "", // Gender not provided in the conversation
+        "age_group": "" // Age group not provided in the conversation
+    },
+    "sessions": [
+        {
+            "session_id": "UniqueSessionID1",
+            "user_id": "UniqueUserID",
+            "date": "YYYY-MM-DD",
+            "mood": "", // Mood not provided in the conversation
+            "location": "", // Location not provided in the conversation
+            "roles": {
+                "neutral_observer": {
+                    "user_input": "I as your Inner Neutral Observer, observe that you feel unrest and worry about not being able to figure out finding the job and fear the uncertainty going forward.",
+                    "chat_gpt_summary": "Thank you, Inner Neutral Observer, for highlighting my current feelings of unrest and worry. The uncertainty of the future, especially concerning the job situation, is indeed causing anxiety. Your perspective helps me to see these feelings without judgment."
+                },
+                "heart_companion": {
+                    "user_input": "I, as your Inner Heart Companion, feel that you have heaviness in your chest, you are irritated and feel sadness and fear about the situation that you are right now in.",
+                    "chat_gpt_summary": "Thank you, Inner Heart Companion, for grounding me in the present moment and helping me recognize the weight in my chest, my irritation, sadness, and fear. It's essential to acknowledge these feelings, and your perspective helps me understand and connect with them more deeply."
+                },
+                "personal_assistant": {
+                    "user_input": "I, as your Inner Personal Assistant, recognize that you should lean into survival capabilities, activate your strength of connecting with people and identify your potential opportunities. The Trust your experience and ability to navigate painful situations and not taking 'No' as an answer to get whatever is needed to overcome the challenges you are facing.",
+                    "chat_gpt_summary": "Thank you, Inner Personal Assistant, for reminding me of my resilience, my capability to connect with others, and my experience in navigating through challenging situations. Your guidance to trust my abilities and to persevere, even when faced with rejection or obstacles, is valuable. I'll remember to lean on these strengths as I move forward."
+                }
+            },
+            "session_summary_by_chat_gpt": "Your journey through these roles has painted a holistic picture of your current state. You're experiencing genuine concerns about the future, but these feelings are valid and real. At the same time, you're equipped with an array of personal strengths and capabilities that can guide you through these challenges. Remembering to check in with these inner roles regularly can offer guidance, validation, and empowerment as you navigate your path forward.",
+            "keywords": {
+                "positive_sentiment": [],
+                "negative_sentiment": []
+            },
+            "lifestyle_data": {
+                "physical_activity": {
+                    "frequency": "", // Frequency not provided in the conversation
+                    "types": [] // Types not provided in the conversation
+                },
+                "diet": "", // Diet not provided in the conversation
+                "sleep_pattern": "", // Sleep pattern not provided in the conversation
+                "heart_rate": "" // User's heart rate, captured manually over 10 seconds
+            },
+            "user_insights": "" // User's reflections and insights from the session as collected by Chat GPT
+        }
+    ],
+    "lifestyle_data": {
+        "user_id": "UniqueUserID",
+        "apple_watch": {
+            "heart_rate_variability": "",
+            "resting_heart_rate": "",
+            "active_energy_burned": ""
+        },
+        "ouraring": {
+            "readiness_score": "",
+            "sleep_score": "",
+            "activity_score": ""
+        }
+    },
+    "trends_and_patterns": {
+        "user_id": "UniqueUserID",
+        "common_moods": [],
+        "common_topics": [],
+        "frequent_positive_keywords": [],
+        "frequent_negative_keywords": [],
+        "activity_correlation": ""
+    },
+    "user_goals_and_achievements": [
+        {
+            "goal_id": "UniqueGoalID",
+            "goal_description": "",
+            "status": "",
+            "completion_date": "YYYY-MM-DD or 'O
