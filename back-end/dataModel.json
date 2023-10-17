@@ -1,0 +1,169 @@
+{
+    "users": {
+        "user_id": "UniqueUserID",
+        "username": "",
+        "password": "",  // Ensure this is hashed for security
+        "joined_date": "YYYY-MM-DD",
+        "gender": ["Male", "Female", "Non-binary", "Other", "Prefer not to say"],
+        "age_group": ["<18", "18-24", "25-34", "35-44", "45-54", "55-64", "65+"],
+        "introductory_questions": {
+            "color": "",
+            "picture": "URI or file path",
+            "sound": "URI or file path"
+        }
+    },
+    "sessions": {
+        "session_id": "UniqueSessionID",
+        "user_id": "Foreign key to User",
+        "session_count": "Numeric value",
+        "date": "YYYY-MM-DD",
+        "mood": {
+            "before_session": "Numeric value (e.g., 1-10)",
+            "after_session": "Numeric value (e.g., 1-10)",
+            "change": "Numeric value"
+        },
+        "location": "",
+        "topics": ["Topic1", "Topic2", "..."],
+        "roles": {
+            "neutral_observer": {
+                "user_input": "",
+                "chat_gpt_summary": ""
+            },
+            "heart_companion": {
+                "user_input": "",
+                "chat_gpt_summary": ""
+            },
+            "personal_assistant": {
+                "user_input": "",
+                "chat_gpt_summary": ""
+            }
+        },
+        "session_summary_by_chat_gpt": "",
+        "keywords": {
+            "positive_sentiment": ["Keyword1", "Keyword2", "..."],
+            "negative_sentiment": ["Keyword1", "Keyword2", "..."]
+        },
+        "daily_lifestyle_data": {
+            "physical_activity": {
+                "type": ["Walking", "Running", "Yoga", "Swimming", "..."],
+                "duration": "Numeric value (e.g., in minutes)",
+                "intensity": ["Low", "Moderate", "High"],
+                "start_time": "HH:MM"
+            },
+            "diet": {
+                "number_of_meals": "Numeric value",
+                "hydration": "Amount in liters",
+                "caloric_intake": "Numeric value (e.g., calories)"
+            },
+            "sleep_pattern": ["Regular", "Irregular"],
+            "average_daily_heart_rate": "Numeric value",
+            "device_data": {
+                "apple_watch": {
+                    "heart_rate_variability": "Numeric value",
+                    "resting_heart_rate": "Numeric value",
+                    "active_energy_burned": "Numeric value",
+                    "readiness_score": "Numeric value"
+                },
+                "ouraring": {
+                    "readiness_score": "Numeric value",
+                    "sleep_duration": "Numeric value",
+                    "activity_duration": "Numeric value",
+                    "sleep_efficiency": "Numeric value"
+                }
+            }
+        },
+        "user_insights": "",
+        "mental_health_indicators": {
+            "loss_of_interest": "Boolean",
+            "fatigue": "Boolean",
+            "anxiety_level": "Numeric value (e.g., 1-10)",
+            "changes_in_appetite": "Boolean",
+            "feelings_of_worthlessness": "Boolean",
+            "concentration_difficulty": "Boolean",
+            "total_indicators": "Numeric value (sum of all indicators)"
+        },
+        "ml_mental_health_indicators": {
+            "ml_loss_of_interest": "Boolean",
+            "ml_fatigue": "Boolean",
+            "ml_anxiety_level": "Numeric value (e.g., 1-10)",
+            "ml_changes_in_appetite": "Boolean",
+            "ml_feelings_of_worthlessness": "Boolean",
+            "ml_concentration_difficulty": "Boolean",
+            "ml_total_indicators": "Numeric value (sum of all indicators)"
+        },
+        "session_vs_average_mental_health": {
+            "session_vs_average": "Numeric value representing difference"
+        },
+        "ml_indicators_vs_user_indicators": "Numeric value representing correlation"
+    },
+    "lifestyle_trends": {
+        "user_id": "Foreign key to User",
+        "trend_id": "UniqueTrendID",
+        "start_date": "YYYY-MM-DD",
+        "end_date": "YYYY-MM-DD",
+        "average_mood_change_per_session": "Numeric value",
+        "diet_type": ["Vegetarian", "Vegan", "Omnivorous", "Pescatarian", "..."],
+        "activity_pattern": {
+            "most_active_time_of_day": ["Morning", "Afternoon", "Evening", "Night"],
+            "most_common_activity": ["Walking", "Running", "Yoga", "Swimming", "..."]
+        },
+        "dietary_trends": {
+            "commonly_consumed_foods": ["FoodItem1", "FoodItem2", "..."],
+            "daily_average_caloric_intake": "Numeric value"
+        },
+        "sleep_trends": {
+            "average_sleep_duration": "Numeric value (e.g., hours)",
+            "average_sleep_efficiency": "Numeric value (e.g., percentage)"
+        },
+        "device_data_trends": {
+            "average_heart_rate": "Numeric value",
+            "apple_watch": {
+                "average_heart_rate_variability": "Numeric value",
+                "average_resting_heart_rate": "Numeric value",
+                "average_active_energy_burned": "Numeric value",
+                "average_readiness_score": "Numeric value"
+            },
+            "ouraring": {
+                "average_readiness_score": "Numeric value",
+                "average_sleep_duration": "Numeric value",
+                "average_activity_duration": "Numeric value",
+                "average_sleep_efficiency": "Numeric value"
+            }
+        }
+    },
+    "trends_and_patterns": {
+        "user_id": "Foreign key to User",
+        "trend_id": "Foreign key to Lifestyle Trends",
+        "common_moods": ["Mood1", "Mood2", "..."],
+        "common_topics": ["Topic1", "Topic2", "..."],
+        "frequent_positive_keywords": ["Keyword1", "Keyword2", "..."],
+        "frequent_negative_keywords": ["Keyword1", "Keyword2", "..."],
+        "activity_to_mood_correlation": "Numeric value"
+    },
+    "user_goals_and_achievements": [{
+        "goal_id": "UniqueGoalID",
+        "user_id": "Foreign key to User",
+        "goal_description": "",
+        "start_date": "YYYY-MM-DD",
+        "expected_end_date": "YYYY-MM-DD",
+        "actual_end_date": "YYYY-MM-DD or null if ongoing",
+        "status": ["Ongoing", "Achieved", "Failed", "On Hold"],
+        "notes": ""
+    }],
+    "user_notes": [{
+        "note_id": "UniqueNoteID",
+        "user_id": "Foreign key to User",
+        "date": "YYYY-MM-DD",
+        "content": ""
+    }],
+    "app_settings": {
+        "user_id": "Foreign key to User",
+        "notification_preferences": {
+            "reminder_notifications": "Boolean",
+            "daily_summary_notifications": "Boolean",
+            "session_notifications": "Boolean"
+        },
+        "theme": ["Light", "Dark", "Custom"],
+        "language": ["English", "Spanish", "French", "..."]
+    }
+}
